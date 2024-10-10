@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            margin-bottom: 10px;
+        }
+        .container label {
+            display: inline-block;
+            width: 200px;
+        }
+        .container input {
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>Регістрація</h1>
+    
+    <form action="/submit_registration" method="post" 
+    id="my_form" onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;"
+    >
+    <div>
+        <label for="fullname">Повне ім’я:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Ім'я та призвіще" required>
+    </div>
+
+    <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email адреса" required>
+    </div>
+
+    <div>
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" placeholder="Введіть пароль" required>
+    </div>
+
+    <div>
+        <label for="confirm_password">Підтвердження пароля:</label>
+        <input type="password" id="confirm_password" name="confirm_password" placeholder="Підтвердити пароль" required>
+    </div>
+
+    <div class="gender">
+        <label>Стать:</label>
+        <input type="radio" id="male" name="gender" value="male" checked required>
+        <label for="male">Чоловіча</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Жіноча</label>
+    </div>
+    
+    <div>
+        <label for="age">Вік:</label>
+        <input type="number" id="age" name="age" min="16" placeholder="Введіть ваш вік" required>
+    </div>
+    
+    <div>
+        <label for="course">Курс:</label>
+        <select id="course" name="course" required>
+            <option value="front-end">Front-End</option>
+            <option value="back-end">Back-End</option>
+            <option value="project-management">Project Management</option>
+            <option value="qa-manual">QA Manual</option>
+        </select>
+    </div>
+    
+    <div>
+        <label for="address">Повна адреса проживання:</label>
+        <textarea id="address" name="address" cols="10" rows="5" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+    </div>
+    
+        <div class="privacy">
+            <input type="checkbox" id="privacy" name="privacy" required>
+            <label for="Погодження з умовами конфіденційності">Я погоджуюсь з обробкою персональних даних.</label>
+        </div>
+    
+
+        <div>
+        <input type="reset" value="Очистити форму ">
+        <input type="submit" value="Зареєструватись">
+        </div>
+
+    </form>
+
+
+</body>
+</html>
