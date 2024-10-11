@@ -16,7 +16,8 @@
     </section>
 
     <div class="container">
-        <form action="/submit_registration" method="post">
+        <form action="#" method="post" enctype="multipart/form-data" id="my_form"
+        onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">>
         <fieldset>
             <legend>About you</legend>
             <div>

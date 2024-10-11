@@ -10,14 +10,22 @@
             margin-bottom: 10px;
         }
 
+
         label {
             display: inline-block;
             width: 200px;
         }
 
+
         input {
             display: inline-block;
             width: 200px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            width: auto;
+
         }
     </style>
 </head>
@@ -27,7 +35,7 @@
 
     <div class="container">
 
-        <form action="/submit_registration" method="post" id="my_form"
+        <form action="#" method="post" enctype="multipart/form-data" id="my_form"
             onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
             <div>
                 <label for="fullname">Повне ім’я:</label>
