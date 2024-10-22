@@ -1,0 +1,20 @@
+header {
+    background: #4A4F56;
+    width: 793px;
+    height: 82px;
+}
+
+body {
+    background: #FFFFFF;
+}
+
+
+list li :before {
+    content: '1';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: ;
+    color: ;
+
+}
