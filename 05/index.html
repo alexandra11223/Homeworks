@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <link rel="stylesheet" href="style/index.css">
+    <title>CSS Dinner Shopping List</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto:wght@400;
+700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
-    <header>CSS Dinner Shopping List</header>
-    <p>Let’s go to the mall!</p>
-    <div class="container">
-        <ul>
-            <ul class="shopping-list">
-                <li>
-                    <label>
-                        <input type="checkbox">
-                        <span>A lot of pickles</span>
-                        <span class="note">(for the next lessons about CSS)</span>
-                    </label>
-                </li>
-                <li class="checkbox">
-                    <label>
-                        <input type="checkbox">
-                        <span>10 apples</span>
-                        <span class="note">(for more CSS manipulations)</span>
-                    </label>
-                </li>
-                <li>
-                    <label>
-                        <input type="checkbox">
-                        <span>20 oranges</span>
-                        <span class="note">(because they are awesome)</span>
-                    </label>
-                </li>
+    <div class="shopping-list-container">
+        <header>
+            <h1 class="title">CSS Dinner Shopping List</h1>
+            <p>Let's go to the mall!</p>
+        </header>
+
+        <ul class="shopping-list">
+            <li>
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" name="item">
+                    <span>A lot of pickles</span>
+                    <span class="note">(for the next lessons about CSS)</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="item"> <!--checked disabled -->
+                    <span>10 apples</span>
+                    <span class="note">(for more CSS manipulations)</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="item">
+                    <span>20 oranges</span>
+                    <span class="note">(because they are awesome)</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="checkbox" name="item">
                     <span>13 plates</span>
                     <span class="note">(hm... they always disappear)</span>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" name="item">
                     <span>15 bentos</span>
                 </label>
             </li>
-            <li class="checkbox">
+            <li>
                 <label>
-                    <input type="checkbox">
+                    <input type="checkbox" name="item">
                     <span>1 bottle of Sake</span>
                     <span class="note">(for my friends)</span>
                 </label>
             </li>
         </ul>
-    </div>
 
-    <footer> 
-        <p>Bon appétit :)</p>
-    </footer>
+        <footer>
+            <p>Bon appétit :)</p>
+        </footer>
+    </div>
 </body>
+
 </html>
