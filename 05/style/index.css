@@ -55,6 +55,11 @@ header p {
     padding: 0;
 }
 
+label {
+    display: block;
+    padding: 15px;
+}
+
 span {
     size: 27px;
 }
@@ -65,30 +70,23 @@ span {
     padding: 0 15px;
     display: flex;
     align-items: center;
-    transition: background-color 0.3s ease;
+    background-color: #7A7593;
+    position: relative;
 }
 
 .shopping-list li:nth-child(odd) {
     background-color: #88839E;
 }
 
-.shopping-list li:nth-child(even) {
-    background-color: #7A7593;
-}
-
 .shopping-list li:hover {
-    background-color: #7A7593;
+    background-color: #393646;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
 }
 
-.shopping-list li:active {
-    background-color: #373447;
-}
-
-.shopping-list li label {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    color: #FFFFFF;
+.shopping-list li input:checked+label {
+    background-color: palegray;
+    transition: background-color 0.5s;
 }
 
 .shopping-list li input:checked+span {
@@ -96,16 +94,39 @@ span {
     color: #9B96AC;
 }
 
-.shopping-list li input:checked+.note {
+
+.shopping-list li:active {
+    background-color: #FF5C5C;
+}
+
+.shopping-list li label {
+    width: fit-content;
+    display: block;
+    justify-content: center;
+    color: #FFFFFF;
+}
+
+
+/* .shopping-list li input:checked+span {
     text-decoration: line-through;
     color: #9B96AC;
 }
+
+.shopping-list li input:checked+.note {
+    text-decoration: line-through;
+    color: #9B96AC;
+} */
 
 .shopping-list li .note {
     font-size: 0.9rem;
     color: #FFFFFF;
     margin-left: 10px;
     line-height: 22px;
+}
+
+.shopping-list li input:checked+.note {
+    text-decoration: line-through;
+    color: #9B96AC;
 }
 
 footer {
