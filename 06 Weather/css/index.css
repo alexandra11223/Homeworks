@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* border: 25px 0px 0px 0px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lucida Sans Unicode;
+    color: #fff;
+
+}
+
+h1 {
+    padding: 60px 35px;
+    font-size: 21px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+
+.weather-container {
+    width: 1440px;
+    /* height: 900px; */
+    margin-inline: auto;
+    background-color: #3399CC;
+    border: 25px solid #2B81AC;
+    margin: 50px 50px;
+}
+
+.grid-container {
+    display: grid;
+    width: 900px;
+    /* top: 129px;
+left: 135px; */
+    padding-left: 135px;
+    grid-template-columns: repeat(4, 1fr);
+    border: 4px #fff;
+}
+
+.city {
+    /* width: 225px; */
+    padding: 20px;
+    /* border-radius: 8px; */
+    text-align: center;
+    transition: 0.3s ease;
+    border: 2px solid white;
+}
+
+.city:hover {
+    cursor: pointer;
+    outline-color: transparent;
+    outline-style: solid;
+    transition: 0.7s;
+
+}
+
+.city:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    transition: 0.7s;
+}
+
+#lisbon {
+    background-color: #64bbe7;
+}
+
+#paris {
+    background-color: #33CCCC;
+}
+
+#belgrade {
+    background-color: #996699;
+}
+
+#venice {
+    background-color: #C24747;
+}
+
+#telaviv {
+    background-color: #E2674A;
+}
+
+#cairo {
+    background-color: #FFCC66;
+}
+
+#newyork {
+    background-color: #99CC99;
+}
+
+#newdelhi {
+    background-color: #669999;
+}
+
+#sanfrancisco {
+    background-color: #CC6699;
+}
+
+#tokyo {
+    background-color: #339966;
+}
+
+#sydney {
+    background-color: #666699;
+}
+
+.city h2 {
+    font-size: 22px;
+    line-height: 25.78px;
+    text-align: center;
+}
+
+.city p {
+    font-size: 22px;
+    line-height: 25.78px;
+    text-align: center;
+}
+
+.city i {
+    font-size: 42px;
+    line-height: 60.76px;
+}
+
+
+#lisbon {
+    grid-column: span 2;
+}
+
+#sanfrancisco {
+    grid-column: span 2;
+}
+
+#sydney {
+    grid-column: span 4;
+}
+
+footer {
+    padding-top: 35px;
+    padding-bottom: 119px;
+    padding-left: 35px;
+}
