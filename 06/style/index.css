@@ -4,19 +4,36 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    padding: 17px 0;
+}
+
+img {
+    vertical-align: top;
+}
+
 ul,
 ol,
 li {
     list-style: none;
 }
 
+button,
+a {
+    transition: all 0.2s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
 .container {
     width: min(90%, 1200px);
     margin-inline: auto;
-}
-
-header {
-    padding: 17px 0;
 }
 
 .nav-container {
@@ -58,6 +75,7 @@ header {
 .auth-buttons button {
     margin-left: 32px;
     padding: 13px 25px;
+    font-family: "Montserrat", sans-serif;
     text-decoration: none;
     background-color: #FF9900;
     color: #fff;
@@ -70,15 +88,15 @@ header {
     color: #2F281E;
 }
 
-.first-screen {
+.first-screen .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 56px;
 }
 
 .first-screen-text {
-    max-width: 50%;
-    /* width: 500px; */
+    width: 500px;
     padding-top: 97px;
     padding-bottom: 97px;
     padding-right: 56px;
@@ -99,6 +117,7 @@ p {
 .first-screen .bnt {
     width: 180px;
     height: 50px;
+    font-family: "Montserrat", sans-serif;
     background-color: #FF9900;
     color: #fff;
     font-size: 16px;
@@ -106,7 +125,7 @@ p {
 }
 
 .first-screen img {
-    max-width: 100%;
+    width: 664px;
     height: auto;
     max-height: 495px;
 }
