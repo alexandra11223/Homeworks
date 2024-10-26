@@ -5,66 +5,112 @@
 }
 
 body {
-    /* border: 25px 0px 0px 0px; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     font-family: Lucida Sans Unicode;
-    color: #fff;
-
 }
 
-h1 {
-    padding: 60px 35px;
-    font-size: 21px;
-}
-
-h2 {
-    font-size: 22px;
-}
-
-
-.weather-container {
-    /* width: 1440px; */
-    /* height: 900px; */
-    margin-inline: auto;
-    background-color: #3399CC;
+.container {
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
     border: 25px solid #2B81AC;
-    margin: 50px 50px;
+    background: #39C;
+    margin-top: 100px;
 }
 
-.grid-container {
-    display: grid;
-    width: 900px;
-    /* top: 129px;
-left: 135px; */
-    padding-left: 135px;
-    padding-right: 137.5px;
-    grid-template-columns: repeat(4, 1fr);
-    border: 4px #fff;
+
+.sub-contaiener {
+    width: 1170px;
+    margin: auto;
+    margin-top: 65px;
+    margin-bottom: 120px;
+
+}
+
+.sub-contaiener .title {
+    color: #FFF;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.wrapper-weather {
+    display: inline-block;
+    border: 2px solid #FFF;
+    margin: auto;
+    font-size: 0;
+    opacity: 1;
+}
+
+
+.row {
+    display: inline-block;
+    width: 1170px;
 }
 
 .city {
-    /* width: 225px; */
-    padding: 20px;
-    /* border-radius: 8px; */
-    text-align: center;
-    transition: 0.3s ease;
-    border: 2px solid white;
+    width: 50%;
+    display: inline-block;
+    padding: 30px 0;
+    opacity: 0.5;
+    transition: all .1s linear;
 }
 
 .city:hover {
-    cursor: pointer;
-    outline-color: transparent;
-    outline-style: solid;
-    transition: 0.7s;
-
+    opacity: 1 ;
 }
 
-.city:focus {
-    outline-color: transparent;
-    outline-style: solid;
-    transition: 0.7s;
+.city:not(:last-child) {
+    border-right: 2px solid #FFF;
+}
+
+.row-1 .city:not(:first-child) {
+    width: 25%;
+}
+
+.center {
+    color: #FFF;
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    list-style: none;
+}
+
+.row-2 .city {
+    width: 25%;
+}
+
+.row-3 .city {
+    width: 25%;
+}
+
+.row-3 .city:nth-child(2) {
+    width: 50%;
+}
+
+.row-4 .city {
+    width: 100%;
+}
+
+.row-1, 
+.row-2, 
+.row-3 {
+    border-bottom: 2px solid #FFF;
+}
+
+.footer {
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+    margin-top: 35px;
 }
 
 #lisbon {
@@ -109,40 +155,4 @@ left: 135px; */
 
 #sydney {
     background-color: #666699;
-}
-
-.city h2 {
-    font-size: 22px;
-    line-height: 25.78px;
-    text-align: center;
-}
-
-.city p {
-    font-size: 22px;
-    line-height: 25.78px;
-    text-align: center;
-}
-
-.city i {
-    font-size: 42px;
-    line-height: 60.76px;
-}
-
-
-#lisbon {
-    grid-column: span 2;
-}
-
-#sanfrancisco {
-    grid-column: span 2;
-}
-
-#sydney {
-    grid-column: span 4;
-}
-
-footer {
-    padding-top: 35px;
-    padding-bottom: 119px;
-    padding-left: 35px;
 }

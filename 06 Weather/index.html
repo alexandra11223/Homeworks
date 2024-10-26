@@ -4,65 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather Blocks</title>
     <link rel="stylesheet" href="assets/fonts/weather/css/weather-icons.min.css">
     <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
-    <div class="weather-container">
-        <header>
-            <h1>CSS Weather Forecast <i class="wi wi-sunrise"></i></h1>
-        </header>
-        <div class="grid-container">
-            <div class="city" id="lisbon">
-                <h2>Lisbon</h2>
-                <p>21°C <i class="wi wi-day-sunny"></i></p>
+    <div class="container center">
+        <div class="sub-contaiener">
+            <header>
+                <h1 class="title">CSS Weather Forecast <i class="wi wi-sunrise"></i></h1>
+            </header>
+            <div class="wrapper-weather">
+                <div class="row-1 row">
+                    <span class="city" id="lisbon">
+                            <ul class="center">
+                                <li>Lisbon</li>
+                                <li>21°C <i class="wi wi-day-sunny"></i></li>
+                            </ul>
+                        </h2>
+                    </span>
+                    <span class="city" id="paris">
+                            <ul class="center">
+                                <li>Paris</li>
+                                <li>11°C <i class="wi wi-night-sleet"></i></li>
+                            </ul>
+                    </span>
+                    <span class="city" id="belgrade">
+                            <ul class="center">
+                                <li>Belgrade</li>
+                                <li>15°C <i class="wi wi-day-cloudy"></i></li>
+                            </ul>
+                    </span>
+                </div>
+                <div class="row-2 row">
+                    <span class="city" id="venice">
+                        <ul class="center">
+                                <li>Venice</li>
+                                <li>21°C <i class="wi wi-day-cloudy-high"></i></li>
+                            </ul>
+                    </span>
+                    <span class="city" id="telaviv">
+                        <ul class="center">
+                                <li>Tel-Aviv</li>
+                                <li>32°C <i class="wi wi-hot"></i></li>
+                            </ul>
+                    </span>
+                    <span class="city" id="cairo">
+                        <ul class="center">
+                                <li>Cair</li>
+                                <li>21°C <i class="wi wi-day-sunny"></i></li>
+                            </ul>
+                    </span>
+                    <span class="city" id="newyork">
+                        <ul class="center">
+                                <li>New-York</li>
+                                <li>17°C <i class="wi wi-day-storm-showers"></i></li>
+                            </ul>
+                    </span>
+                </div>
+                <div class="row-3 row">
+                    <div class="city" id="newdelhi">
+                        <ul class="center">
+                                <li>New-Delhi</li>
+                                <li>17°C <i class="wi wi-rain-wind"></i></li>
+                            </ul>
+                    </div>
+                    <div class="city" id="sanfrancisco">
+                        <ul class="center">
+                                <li>San-Francisco</li>
+                                <li>15°C <i class="wi wi-day-sunny-overcast"></i></li>
+                            </ul>
+                    </div>
+                    <div class="city" id="tokyo">
+                        <ul class="center">
+                                <li>Tokyo</li>
+                                <li>8°C <i class="wi wi-night-clear"></i></li>
+                            </ul>
+                    </div>
+                </div>
+                <div class="row-4 row">
+                    <div class="city" id="sydney">
+                        <ul class="center">
+                                <li>Sydney</li>
+                                <li>25°C <i class="wi wi-night-partly-cloudy"></i></li>
+                            </ul>
+                    </div>
+                </div>
             </div>
-            <div class="city" id="paris">
-                <h2>Paris</h2>
-                <p>11°C <i class="wi wi-night-sleet"></i></p>
-            </div>
-            <div class="city" id="belgrade">
-                <h2>Belgrade</h2>
-                <p>15°C <i class="wi wi-day-cloudy"></i></p>
-            </div>
-            <div class="city" id="venice">
-                <h2>Venice</h2>
-                <p>21°C <i class="wi wi-day-cloudy-high"></i></p>
-            </div>
-            <div class="city" id="telaviv">
-                <h2>Tel-Aviv</h2>
-                <p>32°C <i class="wi wi-hot"></i></p>
-            </div>
-            <div class="city" id="cairo">
-                <h2>Cair</h2>
-                <p>21°C <i class="wi wi-day-sunny"></i></p>
-            </div>
-            <div class="city" id="newyork">
-                <h2>New-York</h2>
-                <p>17°C <i class="wi wi-day-storm-showers"></i></p>
-            </div>
-            <div class="city" id="newdelhi">
-                <h2>New-Delhi</h2>
-                <p>17°C <i class="wi wi-rain-wind"></i></p>
-            </div>
-            <div class="city" id="sanfrancisco">
-                <h2>San-Francisco</h2>
-                <p>15°C <i class="wi wi-day-sunny-overcast"></i></p>
-            </div>
-            <div class="city" id="tokyo">
-                <h2>Tokyo</h2>
-                <p>8°C <i class="wi wi-night-clear"></i></p>
-            </div>
-            <div class="city" id="sydney">
-                <h2>Sydney</h2>
-                <p>25°C <i class="wi wi-night-partly-cloudy"></i></p>
-            </div>
-        </div>
-        <footer>
-            <p>Have a nice day and don't forget umbrella if you are in New Delhi now!</p>
-        </footer>
+            <footer class="footer">
+                Have a nice day and don't forget umbrella if you are in New Delhi now!
+            </footer>
     </div>
 </body>
 
