@@ -27,7 +27,7 @@ img {
 
 .header {
   width: 500px;
-margin: 25px auto;
+  margin: 25px auto;
 }
 
 .header .nav-links {
@@ -35,9 +35,9 @@ margin: 25px auto;
   justify-content: space-between;
 }
 
-.header .nav-links > li > a {
+.header .nav-links li a {
   color: #828282;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -46,7 +46,7 @@ margin: 25px auto;
   transition: all 0.3s linear;
 }
 
-.header .nav-links > li > a:hover {
+.header .nav-links>li>a:hover {
   color: #070707;
 }
 
@@ -75,7 +75,7 @@ margin: 25px auto;
 .about-me .about-me-title {
   color: var(--Black, #070707);
   text-align: center;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -87,17 +87,17 @@ margin: 25px auto;
   margin: auto;
 }
 
-.about-me .par > p {
+.about-me .par>p {
   color: var(--Black, #070707);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   margin-bottom: 20px;
 }
 
-.about-me .par > p:last-child {
+.about-me .par>p:last-child {
   margin-bottom: 0;
 }
 
@@ -108,7 +108,7 @@ margin: 25px auto;
 .skills-title {
   color: var(--Black, #070707);
   text-align: center;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -119,7 +119,7 @@ margin: 25px auto;
 .skills-par {
   color: var(--Black, #070707);
   text-align: center;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -143,15 +143,16 @@ margin: 25px auto;
   width: 80px;
   height: 80px;
 }
+
 .icone .gray {
-    opacity: .2;
+  opacity: .2;
 }
 
 .icone .skills-tool {
   color: var(--text, #828282);
   text-align: center;
   font-family: "Open Sans";
-  font-size: 14px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -160,9 +161,9 @@ margin: 25px auto;
   /* margin-bottom: 60px; */
   width: 80px;
   margin: 25px auto 70px;
-  text-align: center;
   height: 31px;
 }
+
 .icone li {
   list-style-type: none;
   margin: 20px;
@@ -176,7 +177,7 @@ margin: 25px auto;
 .portfolio .portfolio-title {
   color: var(--Black, #070707);
   text-align: center;
-  font-size: 34px;
+  font-size: 2.125rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -191,7 +192,7 @@ margin: 25px auto;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   -webkit-text-stroke-width: 1;
   -webkit-text-stroke-color: #000;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -203,7 +204,7 @@ margin: 25px auto;
   color: var(--Black, #070707);
   text-align: center;
   font-family: "Open Sans";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -275,22 +276,67 @@ footer a:hover {
   margin-bottom: 30px;
   transition: all 0.3s linear;
 }
+
 .btn:hover {
   color: #000;
   background-color: #fff;
 }
+
 .media {
+  display: flex;
+  padding: 0px 3px;
   margin-bottom: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-wrapper {
   width: 200px;
-  margin: auto;
   text-align: center;
 }
 
-.media .footer-link {
+.footer-link {
   color: #828282;
   text-align: center;
+  font-family: "Open Sans";
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
+
+
+/* .footer-link {
+  display: flex;
+  justify-content: center;
+  width: 200px;
+height: 60px;
+align-items: center;
+
+} */
+
+/* .media .footer-link {
+  color: #828282;
+text-align: center;
+font-family: "Open Sans";
+font-size: 0.9rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+} */
+/* .media .footer-link {
+  color: #828282;
+  text-align: center;
+  font-size: 0.9rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+} */
