@@ -11,7 +11,7 @@
 .container-main {
     max-width: 1440px;
     margin: 0 auto;
-    padding: 0px 135px;
+    padding: 0px 135px 120px;
 }
 
 img {
@@ -28,14 +28,14 @@ img {
 
 .container h2 {
     color: #000;
-text-align: center;
-font-family: "Delius Unicase";
-font-size: 2.25rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 1.8px;
-padding: 120px 0px 80px;
+    text-align: center;
+    font-family: "Delius Unicase";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.8px;
+    padding: 120px 0px 80px;
 }
 
 .gallery {
@@ -69,23 +69,9 @@ padding: 120px 0px 80px;
     gap: 30px;
 }
 
-
-
-/* .item-long {
-    grid-column: span ;
-    grid-row: span ;
-} */
-
-/* .c-span2 {
-    grid-column: span 2;
+.item-long {
+    grid-column: span 1;
+    grid-row: span 2;
 }
 
-.r-span2 {
-    grid-row: span 2;
-} */
-
-/* .intem:nth-child(4) {
-    grid-row-start: span;
-    grid-column-start: span ;
-} */
 
