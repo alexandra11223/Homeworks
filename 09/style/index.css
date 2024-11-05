@@ -19,7 +19,10 @@ header {
     padding: 13px 120px;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 70px;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
 }
 
 h2 {
@@ -34,20 +37,20 @@ h2 {
     letter-spacing: 1.44px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    position: relative;
 }
 
 h2::before {
     content: "";
     position: absolute;
-    width: 100%;
-    height: 2px;
-    top: 0;
-    left: 0;
+    top: -20px;
+    width: 100px;
+    height: 8px;
     background-color: #000;
+    margin-bottom: 20px;
 }
 
 p {
-    width: 1200px;
     color: #000;
     font-family: "PT Sans";
     font-size: 1.75rem;
@@ -63,22 +66,33 @@ a {
 
 .container {
     width: min(90%, 1400px);
-    margin: 0px 120px 0px 120px;
+    /* margin: 0px 120px 0px 120px; */
+    margin: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 70px;
+}
 
+.container-block {
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 115px;
 }
 
 .container-text {
     display: flex;
-    width: 1200px;
+    max-width: 785px;
     padding-bottom: 90px;
     flex-direction: column;
     align-items: flex-start;
     gap: 70px;
+    background-image: url('../assets/images/bg-picture.png');
+    top: -20px;
+    background-repeat: no-repeat;
+    background-position: top right;
 }
 
 .chapter {
@@ -118,6 +132,31 @@ a {
     width: 238px;
 }
 
+.aside-nav {
+    display: flex;
+    width: 385px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 70px;
+    color: #000;
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    height: auto;
+    z-index: 10;
+}
+
+.aside-nav a {
+    font-family: "Francois One";
+    font-size: 2.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+}
+
 .react-fundamentals {
     display: flex;
     flex-direction: column;
@@ -153,4 +192,69 @@ a {
 
 .background {
     background-color: #c0c0c0;
+}
+
+.who-using {
+    max-width: 1200px;
+    margin: 8rem auto;
+    text-align: center;
+}
+
+.title-who-using {
+    position: relative;
+    display: flex;
+}
+
+.title-who-using::before {
+    content: "";
+    position: relative;
+    top: 20px;
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+    margin-bottom: 20px;
+
+}
+
+.companies {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    padding: 20px 15px;
+}
+
+.company-card {
+    width: 270px;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background: var(--logos-gray-bg, #E6E6E6);
+    position: relative;
+
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.company-card:hover {
+    filter: invert(1);
+    transform: rotateX(180deg);
+}
+
+.company-card::after {
+    content: attr(company-card);
+    position: absolute;
+    border-radius: 8px;
+    transform: rotateX(180deg);
+    backface-visibility: hidden;
+}
+
+
+.position {
+    position: absolute;
+}
+
+.offset {
+    left: 95px;
 }
