@@ -94,12 +94,13 @@ button:hover {
     background-color: #0056b3;
 }
 
-.terms-note, .login-link {
+.terms-note,
+.login-link {
     text-align: center;
 }
 
 a {
-    color:  #007BFF;
+    color: #007BFF;
 }
 
 .terms-note {
@@ -107,7 +108,7 @@ a {
     font-size: 0.813rem;
     font-style: normal;
     font-weight: 400;
-    line-height: 18px; 
+    line-height: 18px;
     letter-spacing: -0.1px;
 }
 
@@ -116,7 +117,7 @@ a {
     font-size: 0.938rem;
     font-style: normal;
     font-weight: 500;
-    line-height: 22px; 
+    line-height: 22px;
     letter-spacing: -0.1px;
 }
 
@@ -124,10 +125,6 @@ a {
     display: inline-flex;
     flex-direction: row;
     align-items: flex-start;
-}
-
-.upload-button {
-
 }
 
 .delete-button {
@@ -139,7 +136,3 @@ a {
     width: 16px;
     height: 16px;
 }
-
-
-
-
