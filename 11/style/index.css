@@ -51,7 +51,7 @@ header {
     border: 1px solid var(--green, #52C29D);
 }
 
-svg {
+.service-card svg {
     width: 64px;
     height: 50px;
     padding: 5px 12px;
@@ -59,8 +59,9 @@ svg {
     border: 1px solid rgba(21, 101, 216, 0.10);
 }
 /* not woorking */
-svg a:hover {
-    color: #52C29D;
-    border-radius: 16px;
-    border: 1px solid rgba(82, 194, 157, 0.20);
+.service-card a:hover {
+    fill: #52C29D;
+    /* color: #52C29D; */
+    /* border-radius: 16px;
+    border: 1px solid rgba(82, 194, 157, 0.20); */
 }
